@@ -39,8 +39,7 @@ return {
         tailwindcss = true,
         html = true,
 
-        -- Probably want to disable formatting for this lang server
-        tsserver = true,
+        ts_ls = true,
 
         jsonls = {
           settings = {
@@ -134,7 +133,7 @@ return {
       })
 
       -- Autoformatting Setup
-      require('conform').setup {
+			require('conform').setup {
         formatters_by_ft = {
           lua = { 'stylua' },
         },

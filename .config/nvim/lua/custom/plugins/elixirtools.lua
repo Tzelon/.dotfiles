@@ -8,7 +8,7 @@ return {
 
     elixir.setup {
       nextls = {
-        enable = true,
+        enable = false,
         spitfire = true,
         init_options = {
           mix_env = 'dev',
@@ -22,7 +22,7 @@ return {
       },
       credo = {},
       elixirls = {
-        enable = false,
+        enable = true,
         settings = elixirls.settings {
           dialyzerEnabled = false,
           enableTestLenses = false,
